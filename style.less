@@ -1,14 +1,19 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans&display=swap";
 
+
 @bg-color: #f6f6f6;
 @h-color: #1e5d69;
 @p-color: #9f9f9f;
 @li-color: #1b373c;
 @li-color-hover: darken(@li-color, 10%);
-@white: #ffff;
+@white: #ffffff;
 @blue-color: #85A7B8;
+@percent: 40%;
 @imgs: "../lessproject/images";
 
+.mixin(@blue-color; @percent) {
+background: fadeout(@blue-color, @percent);	
+}
 * {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -93,7 +98,7 @@ header {
 }
 a {
 	text-decoration: none;
-	color: white;
+	color: @white;
 	margin: 0 17px;
 	display: block;
 	font-size: 15px;
@@ -141,13 +146,13 @@ nav {
 	position: relative;
 	padding-bottom: 60px;
 	&:after {
+		.mixin(@blue-color, @percent);
 		content: "";
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: @blue-color;
 	}
 	&:before {
 		content: "";
@@ -275,5 +280,26 @@ nav {
 @media only screen and (min-width: 801px) {
 	header {
 		height: 83px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	header {
+		display: flex;
+		.logo {
+		justify-content: center;	
+		}
+	}
+	a {
+		font-size: 12px;
+		margin: 0 10px;
+		justify-content: center;
+	}
+	.footer {
+	.logo {
+	display: none;	
+		}
+		.copyright {
+			text-align: center;
+		}
 	}
 }

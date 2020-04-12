@@ -75,11 +75,11 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  color: #ffff f;
+  color: #ffffff;
 }
 a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   margin: 0 17px;
   display: block;
   font-size: 15px;
@@ -128,13 +128,13 @@ nav {
   padding-bottom: 60px;
 }
 .travel:after {
+  background: rgba(133, 167, 184, 0.6);
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #85A7B8;
 }
 .travel:before {
   content: "";
@@ -253,6 +253,25 @@ nav {
 @media only screen and (min-width: 801px) {
   header {
     height: 83px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  header {
+    display: flex;
+  }
+  header .logo {
+    justify-content: center;
+  }
+  a {
+    font-size: 12px;
+    margin: 0 10px;
+    justify-content: center;
+  }
+  .footer .logo {
+    display: none;
+  }
+  .footer .copyright {
+    text-align: center;
   }
 }
 
