@@ -1,0 +1,259 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans&display=swap";
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #f6f6f6;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+h1 {
+  margin-top: 0;
+}
+h2 {
+  margin-top: 0;
+}
+h3 {
+  margin-top: 0;
+}
+h4 {
+  margin-top: 0;
+}
+.page-section {
+  margin-top: 60px;
+}
+.page-section h1 {
+  color: #1e5d69;
+}
+.page-section h2 {
+  color: #1e5d69;
+}
+.page-section h3 {
+  color: #1e5d69;
+}
+.page-section h4 {
+  color: #1e5d69;
+}
+.page-section > h1 {
+  margin-bottom: 60px;
+}
+p {
+  color: #9f9f9f;
+}
+.text-center {
+  text-align: center;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.logo {
+  color: white;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.logo img {
+  margin-right: 10px;
+  width: 30px;
+}
+footer .logo img {
+  margin-right: 27px;
+}
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #1e5d69;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: #ffff f;
+}
+a {
+  text-decoration: none;
+  color: white;
+  margin: 0 17px;
+  display: block;
+  font-size: 15px;
+}
+a:hover {
+  color: #0b1719;
+}
+nav {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.flex.flex-top {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.flex-spaced {
+  margin-left: -35px;
+}
+.flex-spaced .content-block {
+  padding-left: 35px;
+  width: 50%;
+}
+.site-wrapper {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.travel {
+  text-align: center;
+  position: relative;
+  padding-bottom: 60px;
+}
+.travel:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #85A7B8;
+}
+.travel:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/suma.png");
+  opacity: 0.1;
+  z-index: 1;
+}
+.travel h2 {
+  font-size: 16px;
+  margin: 30px 0;
+}
+.travel .flex {
+  margin-left: -80px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.travel img {
+  width: 50px;
+}
+.travel h1 {
+  position: relative;
+  z-index: 10;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+.travel .box {
+  padding-left: 5%;
+  position: relative;
+  z-index: 20;
+}
+.travel .box .box-inner {
+  background: #fff;
+  padding: 25px 20px;
+}
+.welcome .flex {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+.social {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.footer {
+  background: #1b373c;
+  padding: 12px;
+  color: #fff;
+}
+.footer img {
+  width: 30px;
+}
+.footer .copyright {
+  font-size: 12px;
+}
+@media only screen and (max-width: 800px) {
+  body {
+    padding-top: 70px;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+  header .flex {
+    display: block;
+  }
+  header .logo {
+    margin-bottom: 20px;
+  }
+  .travel .flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
+  .travel .box {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  .welcome .flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .welcome .content-block {
+    width: 100%;
+  }
+  .welcome .content-block.image {
+    margin-bottom: 20px;
+  }
+  .tour .flex {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .tour .box {
+    max-width: 100%;
+    margin: 0 0 40px 0;
+  }
+}
+@media only screen and (min-width: 801px) {
+  header {
+    height: 83px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

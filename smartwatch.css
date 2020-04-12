@@ -1,0 +1,10 @@
+@viewport {
+  viewport-fit: cover;
+}
+@media (shape: rect) {
+  .page-section h1 {
+    color: #ffffff;
+  }
+}
+
+/*# sourceMappingURL=smartwatch.css.map */
