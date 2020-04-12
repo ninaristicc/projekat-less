@@ -1,1 +1,0 @@
-{"version":3,"sources":["smartwatch.less"],"names":[],"mappings":"AAAA;EACC,mBAAA;;AAEA,QAAoB;EACpB,aACA;IACC,cAAA","sourcesContent":["@viewport {\n\tviewport-fit: cover;\n\t}\n\t@media (shape:rect) {\n\t.page-section {\n\th1 {\n\t\tcolor: #ffffff;\n\t\t\t}\n\t\t}\n\t}"]}
